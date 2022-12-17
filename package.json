@@ -52,7 +52,10 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {},
+    "rules": {
+      "prefer-promise-reject-errors": 0,
+      "no-new": 0
+    },
     "overrides": [
       {
         "files": [
