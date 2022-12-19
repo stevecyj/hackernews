@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test": "npm run lint",
+    "test": "npm run lint && npm run test:unit",
     "test:unit": "jest --no-cache",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
@@ -64,9 +64,12 @@
       {
         "files": [
           "**/__tests__/*.{j,t}s?(x)",
-          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+          "**/tests/unit/**/*.spec.{j,t}s?(x)",
+          "**/*.spec.js",
+          "**/*.spec.jsx"
         ],
         "env": {
+          "node": true,
           "jest": true
         }
       }
