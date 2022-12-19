@@ -1,3 +1,3 @@
 test("sanity test", () => {
-  expect(true).toBe("gogo");
+  expect(true).toBe(true);
 });
