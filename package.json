@@ -35,45 +35,13 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vue": "^9.8.0",
     "jest": "^27.5.1",
     "prettier": "^2.4.1",
     "prettier-eslint": "^15.0.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
     "vue-template-compiler": "^2.6.14"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended",
-      "plugin:prettier/recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {
-      "prefer-promise-reject-errors": 0,
-      "no-new": 0
-    },
-    "overrides": [
-      {
-        "files": [
-          "**/__tests__/*.{j,t}s?(x)",
-          "**/tests/unit/**/*.spec.{j,t}s?(x)",
-          "**/*.spec.js",
-          "**/*.spec.jsx"
-        ],
-        "env": {
-          "node": true,
-          "jest": true
-        }
-      }
-    ]
   },
   "browserslist": [
     "> 1%",
@@ -82,6 +50,8 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest",
-    "testMatch": ["**/src/**/*.spec.[jt]s?(x)"]
+    "testMatch": [
+      "**/src/**/*.spec.[jt]s?(x)"
+    ]
   }
 }
